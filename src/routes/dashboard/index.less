@@ -1,0 +1,39 @@
+@import "../../themes/default";
+
+.container {
+  padding: 60px 0;
+  text-align: center;
+  > img {
+    width: 300px;
+    height: 300px;
+  }
+  .list {
+    text-align: left;
+    img {
+      width: 140px;
+      height: 170px;
+      padding: 20px 0;
+    }
+    :global {
+      .am-list-item .am-list-line .am-list-extra {
+        flex-basis: 18%;
+      }
+    }
+  }
+  :global {
+    .am-list-header {
+      margin-top: 30px;
+      background: #ddd;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 34px;
+  color: black;
+  .clearn {
+    color: @primary-color;
+  }
+}
